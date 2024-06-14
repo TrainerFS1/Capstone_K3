@@ -23,10 +23,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
+Route::get('login', function () {
+    return view('login');
+});
 
 Route::middleware('auth:student')->group(function () {
     // Route untuk form login siswa
